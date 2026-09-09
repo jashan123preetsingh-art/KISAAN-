@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102b26"><meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Vetan Ledger — Salary & Advance Manager</title>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">V</span><div><strong>Vetan Ledger</strong><small>Salary made simple</small></div></div>
+      <nav id="nav">
+        <button data-page="dashboard" class="active">⌂ <span>Dashboard</span></button><button data-page="employees">♙ <span>Employees</span></button><button data-page="advance">＋ <span>Add Advance</span></button><button data-page="transactions">↔ <span>Transactions</span></button><button data-page="settlement">✓ <span>Monthly Settlement</span></button><button data-page="reports">▥ <span>Reports</span></button><button data-page="settings">⚙ <span>Settings</span></button>
+      </nav>
+      <div class="storage-note"><span></span><div><b>Offline ready</b><small>Data saved on this device</small></div></div>
+    </aside>
+    <main>
+      <header><button id="menu" aria-label="Open navigation">☰</button><div class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Search employee or ID…" autocomplete="off"><div id="searchResults"></div></div><div class="period-control"><label>Salary period</label><input id="periodPicker" type="month"></div></header>
+      <div id="page"></div>
+    </main>
+  </div>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><button class="modal-close" aria-label="Close">×</button><div id="modalBody"></div></div></div>
+  <div id="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body></html>
